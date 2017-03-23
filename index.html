@@ -3,8 +3,8 @@
 <style>
   body { text-align: center; padding: 150px; }
   h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  body { font: 20px Helvetica, sans-serif; color: #333; background-image: url("assets/logo.png") }
+  article { display: block; text-align: center; width: 650px; margin: 0 auto; }
   a { color: #dc8100; text-decoration: none; }
   a:hover { color: #333; text-decoration: none; }
 </style>
@@ -12,7 +12,11 @@
 <article>
     <h1>Coming soon!</h1>
     <div>
-        <p>Do not miss the launch! <a href="mailto:info@chrysalabs.com">Contact us</a></p>
-        <p>&mdash; The ChrysaLabs Team</p>
+      <p>Be the first to know about our company!</p>
+      <form method="POST" action="http://formspree.io/info@chrysalabs.com">
+        <input type="email" name="email" placeholder="Get notified (Email Address)">
+        <button type="submit">Submit</button>
+      </form>
+      <p>&mdash; The ChrysaLabs Team</p>
     </div>
 </article>
