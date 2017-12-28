@@ -112,11 +112,18 @@
 
 <article>
     <h1>ChrysaLabs</h1>
-    <h3>Developing high-precision urban agriculture technologies</h3>
+    <h3>Developing soil fertility sensing technologies for agriculture</h3>
     <div>
       <form method="POST" action="http://formspree.io/info@chrysalabs.com" class="smart-green">
         <input type="email" name="email" placeholder="Subscribe to our mailing list">
         <button type="submit">Submit</button>
       </form>
     </div>
+    {% if site.facebook_username %}
+  <li>
+    <a href="https://www.facebook.com/{{ site.facebook_username }}">
+      <i class="fa fa-facebook"></i> Facebook
+    </a>
+  </li>
+{% endif %}
 </article>
